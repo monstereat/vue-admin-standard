@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "commit": "git-cz",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest --onlyChanged"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx,vue}": [

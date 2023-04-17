@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# npm test
-# npx.cmd lint-staged
+# npm.cmd test
+npx.cmd lint-staged
 npm.cmd run test

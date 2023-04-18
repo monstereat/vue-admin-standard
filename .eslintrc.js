@@ -45,8 +45,6 @@ module.exports = {
     'no-var': ['error'],
     'object-curly-spacing': ['error', 'always'],
     'operator-linebreak': ['error', 'before'],
-    quotes: ['error', 'double'],
-    semi: ['error', 'always'],
     'space-before-function-paren': ['error', 'never'],
     'switch-colon-spacing': ['error'],
     'vue/component-definition-name-casing': ['error', 'kebab-case'], // vue
@@ -55,7 +53,7 @@ module.exports = {
     'vue/html-self-closing': ['off'], // vue
     'vue/max-attributes-per-line': ['off'], // vue
     'vue/multi-word-component-names': ['off'], // vue
-    'vue/mustache-interpolation-spacing': ['error', 'never'], // vue
+    'vue/mustache-interpolation-spacing': ['error', 'always'], // vue
     'vue/singleline-html-element-content-newline': ['off'] // vue
     /* eslint-enable quote-props */
   }

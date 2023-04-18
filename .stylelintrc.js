@@ -56,7 +56,7 @@ module.exports = {
     'function-linear-gradient-no-nonstandard-direction': null,
     'function-no-unknown': null,
     'import-notation': null,
-    indentation: 'int',
+    indentation: 2,
     'max-line-length': null,
     'no-descending-specificity': null,
     'no-empty-source': null,

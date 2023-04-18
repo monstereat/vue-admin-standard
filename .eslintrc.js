@@ -5,7 +5,8 @@ module.exports = {
     node: true
   },
   extends: [
-    'plugin:vue/vue3-essential',
+    // vue3规则
+    // 'plugin:vue/vue3-essential',
     'standard-with-typescript',
     'standard',
     'plugin:vue/recommended',

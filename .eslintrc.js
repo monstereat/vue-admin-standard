@@ -51,17 +51,7 @@ module.exports = {
     'switch-colon-spacing': ['error'],
     'vue/component-definition-name-casing': ['error', 'kebab-case'], // vue
     'vue/component-tags-order': ['error', { order: ['template', 'script', 'style'] }], // vue
-    'vue/html-indent': [
-      'error',
-      2,
-      {
-        attribute: 1,
-        baseIndent: 1,
-        closeBracket: 0,
-        alignAttributesVertically: true,
-        ignores: []
-      }
-    ], // vue
+    'vue/html-indent': ['error', 2], // vue
     'vue/html-self-closing': ['off'], // vue
     'vue/max-attributes-per-line': ['off'], // vue
     'vue/multi-word-component-names': ['off'], // vue

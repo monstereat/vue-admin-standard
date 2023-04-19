@@ -13,13 +13,7 @@ height: 100%;
 background-repeat: repeat;
 pointer-events: none;`
 
-const getDataUrl = ({
-  font,
-  fillStyle,
-  textAlign,
-  textBaseline,
-  text
-}) => {
+const getDataUrl = ({ font, fillStyle, textAlign, textBaseline, text }) => {
   font = font || '16px normal'
   fillStyle = fillStyle || 'rgba(180, 180, 180, 0.2)'
   text = text || ''
@@ -69,11 +63,7 @@ const createObserver = (el, binding) => {
         observer.disconnect()
         // 重新添加水印，dom监听
         init(el, { value: binding })
-      } else if (
-        type === 'attributes'
-        && target === waterMarkEl
-        && currStyle !== style
-      ) {
+      } else if (type === 'attributes' && target === waterMarkEl && currStyle !== style) {
         waterMarkEl.setAttribute('style', style)
       }
     }

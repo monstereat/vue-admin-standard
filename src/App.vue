@@ -1,10 +1,10 @@
 <template>
-  <div id="app" v-watermark="{text:'绝密资料，请勿外传'}">
+  <div id="app" v-watermark="{ text: '绝密资料，请勿外传' }">
     <router-view />
   </div>
 </template>
 <script>
-export default ({
+export default {
   name: 'app',
   created() {
     // // 阻止f12调试
@@ -18,7 +18,7 @@ export default ({
     //   event.preventDefault()
     // })
   }
-})
+}
 </script>
 
 <style>

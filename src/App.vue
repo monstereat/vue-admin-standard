@@ -1,8 +1,25 @@
 <template>
-  <div id="app">
+  <div id="app" v-watermark="{text:'绝密资料，请勿外传'}">
     <router-view />
   </div>
 </template>
+<script>
+export default ({
+  name: 'app',
+  created() {
+    // // 阻止f12调试
+    // document.addEventListener('keydown', function(e) {
+    //   if (e.key === 'F12') {
+    //     e.preventDefault()
+    //   }
+    // })
+    // // 阻止菜单右键
+    // document.addEventListener('contextmenu', function(event) {
+    //   event.preventDefault()
+    // })
+  }
+})
+</script>
 
 <style>
 nav {

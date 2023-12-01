@@ -1,13 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
-<<<<<<< Updated upstream
-=======
 import router from './router'
 import waterMark from './directives/waterMark.js'
 import bui from 'bwebui'
 
 Vue.use(bui)
->>>>>>> Stashed changes
 
 Vue.config.productionTip = false
 

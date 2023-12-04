@@ -3,12 +3,36 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "commit": "git-cz",
+    "lint-staged": "lint-staged",
     "prepare": "husky install",
+    "serve": "vue-cli-service serve",
     "test": "jest --onlyChanged --passWithNoTests"
   },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    ".{css,scss,sass,less}": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.{html,json,md,yml}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
   "dependencies": {
     "bwebui": "^1.0.22",
     "core-js": "^3.6.5",
@@ -27,6 +51,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
+    "@monstereat/standard": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@vue/cli-plugin-babel": "~4.5.8",
     "@vue/cli-plugin-router": "~5.0.0",
@@ -51,28 +76,5 @@
     "typescript": "^5.0.2",
     "vue-jest": "^3.0.7",
     "vue-template-compiler": "^2.6.11"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    }
-  },
-  "lint-staged": {
-    "*.{js,ts,jsx,tsx,vue}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    ".{css,scss,sass,less}": [
-      "stylelint --fix",
-      "prettier --write"
-    ],
-    "*.{html,json,md,yml}": [
-      "prettier --write"
-    ]
   }
 }

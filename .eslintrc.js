@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     // vue3规则
     // 'plugin:vue/vue3-essential',
+    require.resolve('@monstereat/standard/eslint.cjs'),
     'standard-with-typescript',
     'standard',
     'plugin:vue/recommended',

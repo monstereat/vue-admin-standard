@@ -8,8 +8,9 @@
 // no-missing-end-of-source-newline 在下个版本会移除(无关紧要)
 // number-leading-zero 在下个版本会移除
 
+const styleConfig = require('@monstereat/standard/stylelint.cjs')
 module.exports = {
-  extends: 'stylelint-config-standard',
+  extends: [styleConfig, 'stylelint-config-standard'],
   overrides: [
     {
       customSyntax: 'postcss-scss',

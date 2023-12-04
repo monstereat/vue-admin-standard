@@ -1,0 +1,11 @@
+dist/
+build/
+tsconfig.json
+*.ts
+*tsx
+node_modules/@monstreat/standard/
+# locales/
+# es/
+# .snapshots/
+# *.js
+# .temp
